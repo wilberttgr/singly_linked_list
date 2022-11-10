@@ -97,6 +97,26 @@ namespace singly_linked_list
             else
                 return (true);
         }
+        public void traverse()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList kosong. \n");
+            else
+            {
+                Console.WriteLine("\nData didalam list adalah : \n");
+                Node currentnode;
+                for (currentnode = START; currentnode != null; currentnode = currentnode.next)
+                    Console.Write(currentnode.noMhs + " " + currentnode.nama + "\n");
+                Console.WriteLine();
+            }
+        }
+        public bool listEmpty()
+        {
+            if (START == null)
+                return true;
+            else
+                return false;
+        }
 
     }
     internal class Program
