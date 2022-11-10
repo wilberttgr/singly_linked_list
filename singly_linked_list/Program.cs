@@ -16,8 +16,15 @@ namespace singly_linked_list
         public string nama;
         public Node next;
     }
-   
-    internal class Program
+    class List
+    {
+        Node START;
+        public List()
+        {
+            START = null;
+        }
+    }
+        internal class Program
     {
         static void Main(string[] args)
         {
